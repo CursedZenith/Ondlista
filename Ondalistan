@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christmas list 2027</title>
+ 
+  <!-- FAVICON: put your image in the same folder and change the file name below -->
+  <link rel="icon" type="image/png" href="favicon.png">
+ 
+  <style>
+    :root {
+      --bg: #f6f1e7;
+      --card: #ffffff;
+      --text: #1e2a24;
+      --muted: #5c6b62;
+      --accent: #b3261e;
+      --border: #d9d2c0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14201a;
+        --card: #1c2c24;
+        --text: #f1ece0;
+        --muted: #a9b8ae;
+        --accent: #ff8a80;
+        --border: #34493d;
+      }
+    }
+ 
+    * { box-sizing: border-box; }
+ 
+    body {
+      margin: 0;
+      padding: 48px 20px 80px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+ 
+    main { max-width: 680px; margin: 0 auto; }
+ 
+    h1 {
+      font-size: clamp(2.4rem, 8vw, 4rem);
+      font-weight: 800;
+      line-height: 1.05;
+      margin: 0 0 32px;
+    }
+ 
+    details {
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+    details[open] { border-color: var(--accent); }
+ 
+    summary {
+      cursor: pointer;
+      padding: 16px 20px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      font-size: 1.5rem;
+      line-height: 1;
+      color: var(--accent);
+    }
+    details[open] summary::after { content: "\2212"; }
+    summary:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+ 
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 4px 20px 20px;
+    }
+ 
+    .info { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+ 
+    .name  { font-size: 1.1rem; font-weight: 700; }
+    .price { font-size: 1rem; color: var(--muted); }
+ 
+    .info a {
+      color: var(--accent);
+      word-break: break-all;
+    }
+ 
+    .item img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: var(--border);
+      flex-shrink: 0;
+    }
+ 
+    @media (max-width: 480px) {
+      .item img { width: 100px; height: 100px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Christmas list 2027</h1>
+ 
+    <!-- ITEM 1 -->
+    <details>
+      <summary>Gift 1</summary>
+      <div class="item">
+        <div class="info">
+          <span class="name">Product name</span>
+          <a href="https://example.com" target="_blank" rel="noopener">https://example.com</a>
+          <span class="price">Price</span>
+        </div>
+        <img src="image1.jpg" alt="Gift 1 image">
+      </div>
+    </details>
+ 
+    <!-- ITEM 2 -->
+    <details>
+      <summary>Gift 2</summary>
+      <div class="item">
+        <div class="info">
+          <span class="name">Product name</span>
+          <a href="https://example.com" target="_blank" rel="noopener">https://example.com</a>
+          <span class="price">Price</span>
+        </div>
+        <img src="image2.jpg" alt="Gift 2 image">
+      </div>
+    </details>
+ 
+    <!-- ITEM 3 -->
+    <details>
+      <summary>Gift 3</summary>
+      <div class="item">
+        <div class="info">
+          <span class="name">Product name</span>
+          <a href="https://example.com" target="_blank" rel="noopener">https://example.com</a>
+          <span class="price">Price</span>
+        </div>
+        <img src="image3.jpg" alt="Gift 3 image">
+      </div>
+    </details>
+ 
+    <!-- ITEM 4 -->
+    <details>
+      <summary>Gift 4</summary>
+      <div class="item">
+        <div class="info">
+          <span class="name">Product name</span>
+          <a href="https://example.com" target="_blank" rel="noopener">https://example.com</a>
+          <span class="price">Price</span>
+        </div>
+        <img src="image4.jpg" alt="Gift 4 image">
+      </div>
+    </details>
+  </main>
+</body>
+</html>
+ 
